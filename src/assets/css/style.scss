@@ -1,0 +1,177 @@
+/* 文本按钮 */
+.s-text-button {
+  cursor: pointer;
+  color: var(--color-link);
+  // color: #409eff;
+}
+.s-text-button.is-disabled {
+  cursor: not-allowed;
+}
+.s-text-button:not(.is-disabled):hover {
+  color: var(--color-link-hover);
+  // color: #66b1ff;
+}
+.s-text-button + .s-text-button,
+.s-text-button + button,
+button + .s-text-button {
+  margin-left: 10px;
+}
+
+/* 文本链接样式 */
+.s-text-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.s-text-link.is-disabled {
+  cursor: not-allowed;
+  text-decoration: none;
+}
+.s-text-link:not(.is-disabled):hover {
+  color: #1890ff;
+}
+
+/* 可点击鼠标样式 */
+.s-cursor-click {
+  cursor: pointer;
+}
+.s-cursor-click.is-disabled {
+  cursor: not-allowed;
+}
+
+/* 原生表格 */
+table.style-table-common {
+  width: 100%;
+
+  > tbody > tr,
+  > tr {
+    > th,
+    > td {
+      min-width: 0;
+      box-sizing: border-box;
+      text-align: left;
+      text-overflow: ellipsis;
+      vertical-align: middle;
+      border-color: var(--border-color-split);
+      border-style: solid;
+    }
+  }
+
+  > th {
+    height: 40px;
+    //white-space: nowrap;
+    background-color: var(--color-bg-table-thead);
+  }
+
+  > td {
+    height: 32px;
+  }
+
+  &.border-1 {
+    > body > tr,
+    > tr {
+      > th,
+      > td {
+        border-bottom-width: 1px;
+        border-left-width: 1px;
+
+        &:last-child {
+          border-right-width: 1px;
+        }
+      }
+
+      &:first-child {
+        > th,
+        > td {
+          border-top-width: 1px;
+        }
+      }
+    }
+  }
+
+  &.border-td-bottom {
+    > body > tr,
+    > tr {
+      > th,
+      > td {
+        border-bottom-width: 1px;
+      }
+    }
+  }
+
+  &.border-no_last-td-bottom {
+    > body > tr,
+    > tr {
+      &:not(:last-child) {
+        > th,
+        > td {
+          border-bottom-width: 1px;
+        }
+      }
+    }
+  }
+
+  &.stripe {
+    tr:nth-child(2n) td {
+      background-color: var(--color-bg-table-td-stripe);
+    }
+  }
+
+  &.stripe-2 {
+    tr:nth-child(2n) td {
+      background-color: #f5f5f5;
+    }
+  }
+
+  .style-table-cell-1-1,
+  .style-table-cell-1-2,
+  .style-table-cel1-2-2,
+  .style-table-cell-1-4 {
+    box-sizing: border-box;
+    display: block;
+    text-overflow: ellipsis;
+    // white-space: normal; // 不换行会影响后代标签
+    word-break: break-all;
+  }
+
+  th {
+    border-width: 0;
+
+    .style-table-cell-1-1,
+    .style-table-cell-1-2,
+    .style-table-cell-1-4 {
+      margin-bottom: 6px;
+    }
+
+    .style-table-cell-1-2,
+    .style-table-cell-1-4 {
+      margin-top: 6px;
+    }
+
+    .style-table-cel1-2-2,
+    .style-table-cell-1-4 {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
+    td {
+      border-width: 0;
+
+      .style-table-cell-1-1,
+      .style-table-cel1-1-2,
+      .style-table-cell-1-4 {
+        margin-bottom: 16px;
+      }
+
+      .style-table-cell-1-2,
+      .style-table-cell-1-4 {
+        margin-top: 12px;
+      }
+    }
+
+    .style-table-cell-2-2,
+    .style-table-cell-1-4 {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+}

@@ -1,0 +1,234 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --color-white: #ffffff;
+  --color-white-soft: #f9f9f9;
+  --color-white-mute: #f1f1f1;
+
+  --color-black: #1a1a1a;
+  --color-black-pure: #000000;
+  --color-black-soft: #242424;
+  --color-black-mute: #2f2f2f;
+
+  --color-indigo: #213547;
+  --color-indigo-soft: #476582;
+  --color-indigo-light: #aac8e4;
+
+  --color-gray: #8e8e8e;
+  --color-gray-light-1: #aeaeae;
+  --color-gray-light-2: #c7c7c7;
+  --color-gray-light-3: #d1d1d1;
+  --color-gray-light-4: #e5e5e5;
+  --color-gray-light-5: #f2f2f2;
+  --color-gray-dark-1: #636363;
+  --color-gray-dark-2: #484848;
+  --color-gray-dark-3: #3a3a3a;
+  --color-gray-dark-4: #282828;
+  --color-gray-dark-5: #202020;
+
+  --color-divider-light-1: rgba(60, 60, 60, 0.29);
+  --color-divider-light-2: rgba(60, 60, 60, 0.12);
+  --color-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --color-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --color-text-light-1: var(--color-indigo);
+  --color-text-light-2: rgba(60, 60, 60, 0.7);
+  --color-text-light-3: rgba(60, 60, 60, 0.33);
+  --color-text-light-4: rgba(60, 60, 60, 0.18);
+  --color-text-light-code: var(--color-indigo-soft);
+
+  --color-text-dark-1: rgba(255, 255, 255, 0.87);
+  --color-text-dark-2: rgba(235, 235, 235, 0.6);
+  --color-text-dark-3: rgba(235, 235, 235, 0.38);
+  --color-text-dark-4: rgba(235, 235, 235, 0.18);
+  --color-text-dark-code: var(--color-indigo-light);
+
+  --color-green: #42b883;
+  --color-green-light: #42d392;
+  --color-green-lighter: #35eb9a;
+  --color-green-dark: #33a06f;
+  --color-green-darker: #155f3e;
+
+  --color-blue: #3b8eed;
+  --color-blue-light: #549ced;
+  --color-blue-lighter: #50a2ff;
+  --color-blue-dark: #3468a3;
+  --color-blue-darker: #255489;
+
+  --color-yellow: #ffc517;
+  --color-yellow-light: #ffe417;
+  --color-yellow-lighter: #ffff17;
+  --color-yellow-dark: #e0ad15;
+  --color-yellow-darker: #bc9112;
+
+  --color-red: #ed3c50;
+  --color-red-light: #f43771;
+  --color-red-lighter: #fd1d7c;
+  --color-red-dark: #cd2d3f;
+  --color-red-darker: #ab2131;
+
+  --color-purple: #de41e0;
+  --color-purple-light: #e936eb;
+  --color-purple-lighter: #f616f8;
+  --color-purple-dark: #823c83;
+  --color-purple-darker: #602960;
+}
+
+/**
+ * Colors Theme
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --color-primary: #4d91ff;
+  --color-success: #19be6b;
+  --color-warning: #ff9900;
+  --color-danger: #f56c6c;
+  --color-error: #ed4014;
+  --color-info: #2db7f5;
+  --color-normal: #e6ebf1;
+  --color-link: #2d8cf0;
+  --color-link-hover: var(--color-blue-light);
+  /* --color-link-active: shade(--color-link, 5%); */
+  /* --color-selected: fade(--color-primary, 90%); */
+  --color-tooltip: #fff;
+  --color-subsidiary: #808695;
+  --color-rate-star: #f5a623;
+
+  /* Background color */
+  --color-bg-env: var(--color-white);
+  --color-bg-soft: var(--color-white-soft);
+  --color-bg-mute: var(--color-white-mute);
+  --color-bg-hover: #f8fbff;
+  --color-bg-disabled: #f3f3f3;
+  --color-bg-disabled-btn: #f7f7f7;
+  --color-bg-select-hover: #f3f3f3;
+  --color-bg-tooltip: rgba(70, 76, 91, 0.9);
+  --color-bg-head: #f9fafc;
+  --color-bg-table-thead: #f5f5f5;
+  --color-bg-table-td-stripe: #fafafa;
+  --color-bg-table-td-hover: #f3f7ff;
+  --color-bg-table-td-highlight: #f3f7ff;
+  /* 侧边栏背景 */
+  --color-bg-side: #2d343f;
+  --color-bg-side-menu-active: #242a33;
+
+  --color-divider: var(--color-divider-light-1);
+  --color-divider-light: var(--color-divider-light-2);
+
+  --color-divider-inverse: var(--color-divider-dark-1);
+  --color-divider-inverse-light: var(--color-divider-dark-2);
+
+  --color-text-1: var(--color-text-light-1);
+  --color-text-2: var(--color-text-light-2);
+  --color-text-3: var(--color-text-light-3);
+  --color-text-4: var(--color-text-light-4);
+  --color-text-code: var(--color-text-light-code);
+
+  --color-text-inverse-1: var(--color-text-dark-1);
+  --color-text-inverse-2: var(--color-text-dark-2);
+  --color-text-inverse-3: var(--color-text-dark-3);
+  --color-text-inverse-4: var(--color-text-dark-4);
+
+  --color-brand: var(--color-green);
+  --color-brand-light: var(--color-green-light);
+  --color-brand-dark: var(--color-green-dark);
+  --color-brand-highlight: var(--color-brand-dark);
+
+  /* --cursor-disabled: not-allowed; */
+
+  /* Border color */
+  --border-color-base: #dcdee2;
+  --border-color-split: #e8eaec;
+  --border-width-base: 1px;
+  --border-style-base: sotid;
+
+  /* --input-group-bg: #f8f8f9; */
+}
+
+.dark {
+  --color-bg-env: var(--color-black);
+  --color-bg-soft: var(--color-black-soft);
+  --color-bg-mute: var(--color-black-mute);
+
+  --color-divider: var(--color-divider-dark-1);
+  --color-divider-light: var(--color-divider-dark-2);
+
+  --color-divider-inverse: var(--color-divider-light-1);
+  --color-divider-inverse-light: var(--color-divider-light-2);
+
+  --color-text-1: var(--color-text-dark-1);
+  --color-text-2: var(--color-text-dark-2);
+  --color-text-3: var(--color-text-dark-3);
+  --color-text-4: var(--color-text-dark-4);
+  --color-text-code: var(--color-text-dark-code);
+
+  --color-text-inverse-1: var(--color-text-light-1);
+  --color-text-inverse-2: var(--color-text-light-2);
+  --color-text-inverse-3: var(--color-text-light-3);
+  --color-text-inverse-4: var(--color-text-light-4);
+
+  --color-brand-highlight: var(--color-brand-light);
+}
+
+/**
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --font-family-base: 'Inter var experimental', 'Inter var', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/**
+ * Shadows
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --shadow-card: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  --shadow-up: 0 -1px 6px var(--shadow-color);
+  --shadow-down: 0 1px 6px var(--shadow-color);
+  --shadow-left: -1px 0 6px var(--shadow-color);
+  --shadow-right: 1px 0 6px var(--shadow-color);
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
+  --shadow-3: 0 12px 32px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-4: 0 14px 44px rgba(0, 0, 0, 0.12), 0 3px 9px rgba(0, 0, 0, 0.12);
+  --shadow-5: 0 18px 56px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+/**
+ * Magic Numbers
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --nav-height: 55px;
+
+  --font-size-base: 14px;
+  --font-size-small: 12px;
+  --font-size-large: 16px;
+
+  --line-height-base: 1.5;
+  --border-radius-base: 6px;
+  --border-radius-small: 4px;
+
+  /* Input */
+  --input-height-base: 32px;
+  --input-height-small: 24px;
+  --input-height-large: 36px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-env: var(--color-black);
+    --color-bg-soft: var(--color-black-soft);
+    --color-bg-mute: var(--color-black-mute);
+
+    --color-border: var(--color-divider-dark-2);
+    --color-border-hover: var(--color-divider-dark-1);
+
+    --color-heading: var(--color-text-dark-1);
+    --color-text: var(--color-text-dark-2);
+  }
+}
